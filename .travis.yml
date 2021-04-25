@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+ - "15"
+
+cache: npm
+
+script: npm run build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the Travis CI repository settings, as a secure variable
+  keep_history: true
+  on:
+    branch: main
