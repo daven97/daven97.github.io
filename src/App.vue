@@ -51,8 +51,8 @@
         style="display: flex; justify-content: flex-end"
       >
         <v-tab>Experience</v-tab>
+        <v-tab>Skills</v-tab>
         <v-tab>Projects</v-tab>
-        <v-tab>Education</v-tab>
         <v-tab>Contact</v-tab>
         <v-tab>About Me</v-tab>
       </v-tabs>
