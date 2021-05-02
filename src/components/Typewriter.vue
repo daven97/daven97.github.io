@@ -40,7 +40,7 @@ export default {
         }
       } else if (this.state === "erasing") {
         if (this.displayText.length > 0) {
-          // Continue erasing the message
+          // Continue erasing the message, one character at a time
           this.displayText = this.displayText.slice(0, -1);
         } else {
           // Stop erasing and begin typing the new message

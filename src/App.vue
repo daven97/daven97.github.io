@@ -37,9 +37,10 @@
       </div>
 
       <v-tabs
+        class="d-none d-sm-flex"
         height="56px"
         right
-        style="display: flex; justify-content: flex-end"
+        style="display: flex; justify-content: flex-end; margin-right: 5px"
       >
         <v-tab>Experience</v-tab>
         <v-tab>Skills</v-tab>
@@ -47,6 +48,13 @@
         <v-tab>Contact</v-tab>
         <v-tab>About Me</v-tab>
       </v-tabs>
+
+      <v-spacer d-flex d-sm-none />
+      <v-app-bar-nav-icon
+        @click="drawer = true"
+        class="d-flex d-sm-none align-self-end"
+        right
+      ></v-app-bar-nav-icon>
     </v-app-bar>
 
     <v-main>
@@ -205,7 +213,33 @@
       scroll really really a bunch scroll Make it scroll really really a bunch
       scroll Make it scroll really really a bunch scroll Make it scroll really
       really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch
+      scroll really really a bunch Make it scroll really really a bunch scroll
+      Make it scroll really really a bunch scroll Make it scroll really really a
+      bunch scroll Make it scroll really really a bunch scroll Make it scroll
+      really really a bunch scroll Make it scroll really really a bunch scroll
+      Make it scroll really really a bunch Make it scroll really really a bunch
+      scrollMake it scroll really really a bunch scroll Make it scroll really
+      really a bunch scroll Make it scroll really really a bunch scroll Make it
+      scroll really really a bunch scroll Make it scroll really really a bunch
+      scroll Make it scroll really really a bunch scroll Make it scroll really
+      really a bunch scroll Make it scroll really really a bunch scroll Make it
+      scroll really really a bunch scroll Make it scroll really really a bunch
+      scroll Make it scroll really really a bunch scroll Make it scroll really
+      really a bunch scroll Make it scroll really really a bunch scroll Make it
+      scroll really really a bunch scroll Make it scroll really really a bunch
+      scroll Make it scroll really really a bunch scroll Make it scroll really
+      really a bunch scroll Make it scroll really really a bunch scroll Make it
+      scroll really really a bunch scroll Make it scroll really really a bunch
+      scroll Make it scroll really really a bunch scroll Make it scroll really
+      really a bunch scroll Make it scroll really really a bunch scroll Make it
+      scroll really really a bunch scroll Make it scroll really really a bunch
+      scroll Make it scroll really really a bunch scroll Make it scroll really
+      really a bunch scroll Make it scroll really really a bunch scroll Make it
+      scroll really really a bunch Make it scroll really really a bunch scroll
+      Make it scroll really really a bunch scroll Make it scroll really really a
+      bunch scroll Make it scroll really really a bunch scroll Make it scroll
+      really really a bunch scroll Make it scroll really really a bunch scroll
+      Make it scroll really really a bunch
     </v-main>
   </v-app>
 </template>
