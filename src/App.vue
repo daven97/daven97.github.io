@@ -37,6 +37,7 @@
         height="56px"
         right
         style="display: flex; justify-content: flex-end; margin-right: 5px"
+        v-model="tab"
       >
         <v-tab>Experience</v-tab>
         <v-tab>Skills</v-tab>
@@ -54,204 +55,36 @@
     </v-app-bar>
 
     <v-main>
-      <!-- <v-sheet
-        id="scrolling-techniques-3"
-        class="overflow-y-auto"
-        max-height="600"
-      >
-        <v-container style="height: 1000px"></v-container>
-      </v-sheet> -->
-      <typewriter
-        :messages="[
-          'Husband.',
-          'Father.',
-          'Computer Engineer.',
-          'Web Developer.',
-          'Thinker.',
-          'Builder.',
-        ]"
-      />
-      Make it scroll really really a bunch scroll Make it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch scroll Make it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch scroll Make it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch scroll Make it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch scroll Make it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch scroll Make it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch scroll Make it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch scroll Make it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch scroll Make it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch scroll Make it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch scroll Make it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch scroll Make it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch
-      scrollMake it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scrollMake it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scrollMake it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      Make it scroll really really a bunch scroll Make it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch scroll Make it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch scrollMake it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch scroll Make it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch scroll Make it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch scroll Make it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch scroll Make it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch scroll Make it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scrollMake it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch scroll Make it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch Make it scroll really really a bunch
-      scrollMake it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch scroll Make it scroll really really a bunch
-      scroll Make it scroll really really a bunch scroll Make it scroll really
-      really a bunch scroll Make it scroll really really a bunch scroll Make it
-      scroll really really a bunch Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch scroll Make it scroll really really a
-      bunch scroll Make it scroll really really a bunch scroll Make it scroll
-      really really a bunch scroll Make it scroll really really a bunch scroll
-      Make it scroll really really a bunch
+      <v-tabs-items v-model="tab">
+        <v-tab-item>
+          <page>
+            <about />
+          </page>
+        </v-tab-item>
+        <v-tab-item>
+          <page>
+            <about />
+          </page>
+        </v-tab-item>
+      </v-tabs-items>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import Typewriter from "@/components/Typewriter.vue";
+import About from "@/components/About.vue";
+import Page from "@/components/Page.vue";
 
 export default {
   name: "App",
 
   components: {
-    Typewriter,
+    About,
+    Page,
   },
 
   data: () => ({
-    //
+    tab: null,
   }),
 };
 </script>
