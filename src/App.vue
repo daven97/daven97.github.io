@@ -16,28 +16,24 @@
         ></v-img>
       </template>
 
-      <div class="d-flex align-center">
-        <v-img
-          alt="Dave Nuttall's Website Logo"
-          class="shrink mr-2"
-          contain
-          src="./assets/favicon-32x32.png"
-          transition="scale-transition"
-          width="40"
-        />
-
+      <div
+        class="d-flex align-self-center align-center shrink justify-start"
+        style="height: 100%; width: auto"
+      >
         <v-img
           alt="Dave Nuttall Site Name"
           class="shrink mr-2"
+          height="90%"
+          width="auto"
           contain
-          min-width="100"
-          src="./assets/WebsiteName.svg"
-          width="100"
+          position="left center"
+          src="./assets/WebsiteHeaderLogo.svg"
+          transition="scale-transition"
         />
       </div>
 
       <v-tabs
-        class="d-none d-sm-flex"
+        class="d-none d-md-flex"
         height="56px"
         right
         style="display: flex; justify-content: flex-end; margin-right: 5px"
@@ -52,7 +48,7 @@
       <v-spacer d-flex d-sm-none />
       <v-app-bar-nav-icon
         @click="drawer = true"
-        class="d-flex d-sm-none align-self-end"
+        class="d-flex d-md-none align-self-end"
         right
       ></v-app-bar-nav-icon>
     </v-app-bar>
