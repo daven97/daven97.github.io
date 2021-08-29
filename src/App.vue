@@ -5,9 +5,8 @@
       color="primary"
       dark
       fade-img-on-scroll
-      prominent
-      src="./assets/sky.jpg"
-      shrink-on-scroll
+      scroll-threshold="1000"
+      src="@/assets/images/sky.jpg"
     >
       <template v-slot:img="{ props }">
         <v-img
@@ -27,7 +26,7 @@
           width="auto"
           contain
           position="left center"
-          src="./assets/WebsiteHeaderLogo.svg"
+          src="@/assets/images/WebsiteHeaderLogo.svg"
           transition="scale-transition"
         />
       </div>
@@ -66,6 +65,11 @@
             <about />
           </page>
         </v-tab-item>
+        <v-tab-item>
+          <page>
+            <projects />
+          </page>
+        </v-tab-item>
       </v-tabs-items>
     </v-main>
   </v-app>
@@ -74,6 +78,7 @@
 <script>
 import About from "@/components/About.vue";
 import Page from "@/components/Page.vue";
+import Projects from "@/components/Projects.vue";
 
 export default {
   name: "App",
@@ -81,6 +86,7 @@ export default {
   components: {
     About,
     Page,
+    Projects,
   },
 
   data: () => ({

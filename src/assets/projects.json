@@ -1,0 +1,131 @@
+{
+    "projects": [
+        {
+            "name": "TypingtheTruth",
+            "image": {
+                "paths": [
+                    "typing_the_truth.png"
+                ],
+                "position": "top center"
+            },
+            "description": "A simple website that visually compares the reliable accounts of the First Vision",
+            "links": {
+                "sourceCodeLink": "https://github.com/daven97/TypingTheTruth",
+                "demoLink": "https://daven97.github.io/TypingTheTruth"
+            },
+            "tags": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "ES6"
+            ],
+            "flex": 6
+        },
+        {
+            "name": "Jillcube",
+            "image": {
+                "paths": [
+                    "jillcube_short.png"
+                ],
+                "position": "top center"
+            },
+            "description": "A Jackbox clone with some modificationsA Jackbox clone with some modificationsA Jackbox clone with some modificationsA Jackbox clone with some modificationsA Jackbox clone with some modifications",
+            "links": {
+                "sourceCodeLink": "https://github.com/TrevinAvery/Jillcube",
+                "demoLink": "https://jillcube.herokuapp.com/"
+            },
+            "tags": [
+                "Vue.js",
+                "Node.js",
+                "Websockets",
+                "Webpack",
+                "SASS",
+                "JSON",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "ES6",
+                "Group Project"
+            ],
+            "flex": 6
+        },
+        {
+            "name": "Fast and Blurryless",
+            "image": {
+                "contain": true,
+                "paths": [
+                    "fab_logo.png"
+                ],
+                "position": "center center"
+            },
+            "description": "",
+            "links": {
+                "sourceCodeLink": "",
+                "demoLink": ""
+            },
+            "tags": [
+                "Java",
+                "Python",
+                "Group Project",
+                "Maven",
+                "Signal Processing"
+            ],
+            "flex": 4
+        },
+        {
+            "name": "Portfolio Site",
+            "image": {
+                "contain": true,
+                "paths": [
+                    "WebsiteHeaderLogo.svg"
+                ],
+                "position": "center center"
+            },
+            "description": "A Jackbox clone with some modifications",
+            "links": {
+                "sourceCodeLink": "https://github.com/TrevinAvery/Jillcube",
+                "demoLink": "https://jillcube.herokuapp.com/"
+            },
+            "tags": [
+                "Vue.js",
+                "Node.js",
+                "Webpack",
+                "SASS",
+                "JSON",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "ES6"
+            ],
+            "flex": 4
+        },
+        {
+            "name": "Chapple",
+            "image": {
+                "contain": true,
+                "paths": [
+                    "chat.png"
+                ],
+                "position": "center center"
+            },
+            "description": "A Jackbox clone with some modifications",
+            "links": {
+                "sourceCodeLink": "https://github.com/TrevinAvery/Jillcube",
+                "demoLink": "https://jillcube.herokuapp.com/"
+            },
+            "tags": [
+                "Vue.js",
+                "Node.js",
+                "Webpack",
+                "SASS",
+                "JSON",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "ES6",
+                "Group Project"
+            ],
+            "flex": 4
+        }
+    ]
+}
