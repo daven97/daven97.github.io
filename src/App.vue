@@ -72,11 +72,14 @@
         </v-tab-item>
       </v-tabs-items>
     </v-main>
+
+    <contact-footer />
   </v-app>
 </template>
 
 <script>
 import About from "@/components/About.vue";
+import ContactFooter from "@/components/ContactFooter.vue";
 import Page from "@/components/Page.vue";
 import Projects from "@/components/Projects.vue";
 
@@ -85,6 +88,7 @@ export default {
 
   components: {
     About,
+    ContactFooter,
     Page,
     Projects,
   },
