@@ -4,15 +4,20 @@ import router from "./router";
 import vuetify from "./plugins/vuetify";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
+  faEnvelope,
   faExpand,
   faExpandArrowsAlt,
+  faFileAlt,
   faPlay,
 } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
+library.add(faEnvelope);
 library.add(faExpand);
 library.add(faExpandArrowsAlt);
+library.add(faFileAlt);
+library.add(faLinkedin);
 library.add(faGithub);
 library.add(faPlay);
 

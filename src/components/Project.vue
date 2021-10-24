@@ -18,35 +18,31 @@
         </v-chip-group>
       </v-card-text>
       <v-card-actions class="d-flex justify-end align-end flex-grow-2">
-        <font-awesome-icon-button
+        <fa-icon-button
           v-if="projectInfo.links.demoLink"
           animationType="tada"
           color="secondary"
-          :onClick="openLinkInNewTab.bind(null, projectInfo.links.demoLink)"
           :icon="['fas', 'play']"
+          :onClick="openLinkInNewTab.bind(null, projectInfo.links.demoLink)"
         />
-        <font-awesome-icon-button
+        <fa-icon-button
           v-if="projectInfo.links.sourceCodeLink"
           animationType="shake"
           color="secondary"
-          :onClick="test"
           :icon="['fab', 'github']"
+          :onClick="test"
+        />
+        <fa-icon-button
+          animationType="pulse"
+          color="secondary"
+          :icon="['fas', 'expand-arrows-alt']"
+          :onClick="openDialog"
         />
         <v-dialog
           v-model="showDialog"
           :fullscreen="$vuetify.breakpoint.xsOnly"
           width="900"
         >
-          <template v-slot:activator="{ on, attrs }">
-            <font-awesome-icon-button
-              color="secondary"
-              animationType="pulse"
-              :icon="['fas', 'expand-arrows-alt']"
-              v-bind="attrs"
-              v-on="on"
-              :onClick="on.click"
-            />
-          </template>
           <v-card>
             <v-carousel>
               <v-carousel-item
@@ -72,13 +68,13 @@
 </template>
 
 <script>
-import FontAwesomeIconButton from "@/components/FontAwesomeIconButton.vue";
+import FaIconButton from "@/components/fontAwesome/FaIconButton.vue";
 // import FontAwesomeIconButton from "./FontAwesomeIconButton.vue";
 
 export default {
   name: "Project",
   components: {
-    FontAwesomeIconButton,
+    FaIconButton,
   },
   computed: {},
   data: () => ({

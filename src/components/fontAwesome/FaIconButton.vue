@@ -1,5 +1,5 @@
 <template>
-  <v-btn class="faa-parent animated-hover" @click="onClick" text>
+  <v-btn :class="parentClass" @click="onClick" text>
     <font-awesome-icon
       :color="colorComputed"
       :class="iconClass"
@@ -12,7 +12,6 @@
 
 <script>
 export default {
-  name: "FontAwesomeIconButton",
   computed: {
     colorComputed() {
       if (this.color === "primary" || this.color === "secondary") {
@@ -30,6 +29,11 @@ export default {
       }
       return iconClassString;
     },
+    parentClass() {
+      let parentClassString = "faa-parent animated-hover";
+      if (this.animationType === "showcase") parentClassString += " showcase";
+      return parentClassString;
+    },
     themeColor() {
       if (this.$vuetify.theme.dark) {
         return this.$vuetify.theme.themes.dark[this.color];
@@ -38,6 +42,7 @@ export default {
       }
     },
   },
+  name: "FaIconButton",
   props: {
     animationType: String,
     color: {
@@ -46,6 +51,11 @@ export default {
     icon: {
       type: Array,
       required: true,
+    },
+    isLink: {
+      type: Boolean,
+      required: false,
+      default: false,
     },
     onClick: {
       type: Function,
@@ -59,6 +69,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+v-button {
+  padding: 0;
+}
+
 // Pulse Animation
 @-webkit-keyframes pulse {
   0% {
@@ -100,6 +114,22 @@ export default {
 .faa-parent.animated-hover:hover .faa-pulse {
   -webkit-animation: pulse 2s linear infinite;
   animation: pulse 2s linear infinite;
+}
+
+// Showcase Animation
+.faa-parent.animated-hover.showcase {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.faa-parent.animated-hover.showcase:hover {
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 // Shake Animation
