@@ -71,6 +71,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@font-face {
+  font-family: SevenSegment;
+  src: url(../assets/fonts/SevenSegment.ttf);
+}
+
+h1 {
+  font-family: SevenSegment;
+}
+
 span {
   border-right: 0.1px solid red;
 }

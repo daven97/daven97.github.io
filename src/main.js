@@ -25,6 +25,8 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 Vue.config.productionTip = false;
 
+// import "@assets/stylesheets/fonts.css";
+
 new Vue({
   router,
   vuetify,

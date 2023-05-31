@@ -44,7 +44,10 @@
           width="900"
         >
           <v-card>
-            <v-carousel>
+            <v-carousel
+              :hide-delimiters="images.length <= 1"
+              :show-arrows="images.length > 1"
+            >
               <v-carousel-item
                 v-for="(image, i) in images"
                 :key="i"

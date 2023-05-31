@@ -1,0 +1,56 @@
+{
+  "experience": [
+    {
+      "companyName": "BYU Office of Information Technology",
+      "jobTitle": "Student Web Developer",
+      "emoji": "📚",
+      "startDate": "04-2018",
+      "endDate": "04-2019",
+      "location": "Provo, Utah",
+      "description": [
+        "Developed a stylized, interactive, and fully functioning web front-end for a locker rental site using Vue.js ",
+        "Created and implemented 17 unit tests for the locker rental site using Jest software",
+        "Completed 5 professional development certifications, including courses on JavaScript, Vue.js, and PHP to increase productivity and provide employer with greater value"
+      ]
+    },
+    {
+      "companyName": "FamilySearch",
+      "jobTitle": "Web Development Intern ",
+      "emoji": "🤓",
+      "startDate": "04-2019",
+      "endDate": "07-2019",
+      "location": "Lehi, Utah",
+      "description": [
+        "Designed a customizable, flexible, and reusable Polymer dropdown component for use across multiple pages of a web application",
+        "Participated actively in an Agile-based development environment, including leading several daily stand-up meetings",
+        "Utilized version control software to reduce code duplication and to provide and receive feedback"
+      ]
+    },
+    {
+      "companyName": "FamilySearch",
+      "jobTitle": "Web Developer",
+      "emoji": "🖥",
+      "startDate": "07-2019",
+      "endDate": "10-2020",
+      "location": "Lehi, Utah",
+      "description": [
+        "Increased application functionality and efficiency while using JavaScript, HTML, CSS, React.js, and Polymer to create new features and improve existing site behavior",
+        "Collaborated with project managers, designers, and team members to produce inspiring user experiences that were cross-browser compatible for both desktop and mobile devices in 20 languages",
+        "Regularly identified, documented, and resolved code defects, resulting in a more robust genealogy website"
+      ]
+    },
+    {
+      "companyName": "G&A Partners",
+      "jobTitle": "Software Engineer",
+      "emoji": "⚙️",
+      "startDate": "10-2020",
+      "endDate": null,
+      "location": "South Jordan, UT (Remote)",
+      "description": [
+        "Increased application functionality and efficiency while using JavaScript, HTML, CSS, React.js, and Polymer to create new features and improve existing site behavior",
+        "Collaborated with project managers, designers, and team members to produce inspiring user experiences that were cross-browser compatible for both desktop and mobile devices in 20 languages",
+        "Regularly identified, documented, and resolved code defects, resulting in a more robust genealogy website"
+      ]
+    }
+  ]
+}

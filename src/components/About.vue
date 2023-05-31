@@ -1,9 +1,9 @@
 <template>
   <div>
+    <v-layout row wrap>
+  <v-flex xs12 sm12>
     <v-parallax
       src="@/assets/images/sky.jpg"
-      height="500"
-      gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)"
     >
       <typewriter
         :messages="[
@@ -396,6 +396,9 @@
     scroll really really a bunch scroll Make it scroll really really a bunch
     scroll Make it scroll really really a bunch scroll Make it scroll really
     really a bunch
+  
+  </v-flex>
+  </v-layout>
   </div>
 </template>
 

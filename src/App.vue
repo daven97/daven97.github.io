@@ -1,25 +1,27 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-      fade-img-on-scroll
-      scroll-threshold="1000"
-      src="@/assets/images/sky.jpg"
-    >
-      <template v-slot:img="{ props }">
+    <v-app-bar app color="primary" dark scroll-threshold="1000">
+      <!-- <v-app-bar
+        app
+        color="primary"
+        dark
+        fade-img-on-scroll
+        scroll-threshold="1000"
+        src="@/assets/images/sky.jpg"
+      > -->
+      <!-- <template v-slot:img="{ props }">
         <v-img
           v-bind="props"
           gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)"
         ></v-img>
-      </template>
+      </template> -->
 
       <div
         class="d-flex align-self-center align-center shrink justify-start"
         style="height: 100%; width: auto"
       >
-        <v-img
+        Dave
+        <!-- <v-img
           alt="Dave Nuttall Site Name"
           class="shrink mr-2"
           height="90%"
@@ -28,7 +30,7 @@
           position="left center"
           src="@/assets/images/WebsiteHeaderLogo.svg"
           transition="scale-transition"
-        />
+        /> -->
       </div>
 
       <v-tabs
@@ -57,17 +59,27 @@
       <v-tabs-items v-model="tab">
         <v-tab-item>
           <page>
-            <about />
+            <experiences />
           </page>
         </v-tab-item>
         <v-tab-item>
           <page>
-            <about />
+            <skills />
           </page>
         </v-tab-item>
         <v-tab-item>
           <page>
             <projects />
+          </page>
+        </v-tab-item>
+        <v-tab-item>
+          <page>
+            <projects />
+          </page>
+        </v-tab-item>
+        <v-tab-item>
+          <page>
+            <about />
           </page>
         </v-tab-item>
       </v-tabs-items>
@@ -80,8 +92,10 @@
 <script>
 import About from "@/components/About.vue";
 import ContactFooter from "@/components/ContactFooter.vue";
+import Experiences from "@/components/Experiences.vue";
 import Page from "@/components/Page.vue";
 import Projects from "@/components/Projects.vue";
+import Skills from "@/components/Skills.vue";
 
 export default {
   name: "App",
@@ -89,8 +103,10 @@ export default {
   components: {
     About,
     ContactFooter,
+    Experiences,
     Page,
     Projects,
+    Skills,
   },
 
   data: () => ({
